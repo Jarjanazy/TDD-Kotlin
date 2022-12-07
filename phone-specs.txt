@@ -4,3 +4,4 @@ The file is located on the phone's storage at /data/charge/status.json
 To calculate the remaining charge of the phone use the following equation:
 charge = ((currentAmperage * 4.5 + 1500) / currentHz) * 100
 
+To display the charge on the screen you must call the telephone ChargeDisplay class using the displayCharge(newValue) method.

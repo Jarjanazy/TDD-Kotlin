@@ -5,6 +5,8 @@ import java.io.File
 
 class ChargeIndicator {
 
+    private val chargeDisplay = ChargeDisplay()
+
     fun displayChargeIndicator() {
         val jsonString: String = File("/home/jalil/Desktop/status.json").readText(Charsets.UTF_8)
 
@@ -15,7 +17,7 @@ class ChargeIndicator {
 
         val currentCharge = currentAmperage.times(4.5).plus(1500).div(currentHz).times(100)
 
-
+        chargeDisplay.displayCharge(currentCharge)
     }
 
 
