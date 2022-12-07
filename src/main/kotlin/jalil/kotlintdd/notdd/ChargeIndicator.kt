@@ -10,6 +10,12 @@ class ChargeIndicator {
 
         val status: Map<String, Double> = jacksonObjectMapper().readValue(jsonString)
 
+        val currentAmperage = status.getValue("currentAmperage")
+        val currentHz = status.getValue("currentHz")
+
+        val currentCharge = currentAmperage.times(4.5).plus(1500).div(currentHz).times(100)
+
+
     }
 
 
