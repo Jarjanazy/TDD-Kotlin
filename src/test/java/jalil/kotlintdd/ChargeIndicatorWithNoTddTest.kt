@@ -1,12 +1,12 @@
-package jalil.kotlintdd.notdd;
+package jalil.kotlintdd;
 
 import org.junit.jupiter.api.Test;
 
-class ChargeIndicatorTest {
+class ChargeIndicatorWithNoTddTest {
 
     @Test
      fun testChargeIndicator() {
-        val chargeIndicator = ChargeIndicator()
+        val chargeIndicator = ChargeIndicatorWithNoTdd()
 
         chargeIndicator.displayChargeIndicator()
 

@@ -1,9 +1,9 @@
-package jalil.kotlintdd.notdd
+package jalil.kotlintdd
 
 import com.fasterxml.jackson.module.kotlin.*
 import java.io.File
 
-class ChargeIndicator {
+class ChargeIndicatorWithNoTdd {
 
     private val chargeDisplay = ChargeDisplay()
 
