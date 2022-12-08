@@ -10,7 +10,7 @@ class ChargeIndicatorWithTddTest {
     fun givenAmperageIs1AndHzIs2000_WhenDisplayChargeMethodIsCalled_ThenShowChargeAs75() {
         val chargeDisplay = Mockito.mock(ChargeDisplay::class.java)
 
-        val chargeIndicator = ChargeIndicatorWithTdd()
+        val chargeIndicator = ChargeIndicatorWithTdd(chargeDisplay)
 
         chargeIndicator.displayChargeIndicator(1, 2000)
 
