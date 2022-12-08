@@ -17,7 +17,7 @@ class ChargeIndicatorWithNoTdd {
 
         val currentCharge = currentAmperage.times(4.5).plus(1500).div(currentHz).times(100)
 
-        chargeDisplay.displayCharge(currentCharge)
+        chargeDisplay.displayCharge(currentCharge.toInt())
     }
 
 
