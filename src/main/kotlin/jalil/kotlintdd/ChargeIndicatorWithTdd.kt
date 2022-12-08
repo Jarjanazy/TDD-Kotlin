@@ -3,7 +3,7 @@ package jalil.kotlintdd
 class ChargeIndicatorWithTdd(private val chargeDisplay: ChargeDisplay) {
 
     fun displayChargeIndicator(amperage: Int, hz: Int) {
-
-        chargeDisplay.displayCharge(75)
+        val charge = (((amperage * 4.5) + 1500) / hz ) * 100
+        chargeDisplay.displayCharge(charge.toInt())
     }
 }
