@@ -10,14 +10,18 @@ class ChargeIndicatorWithTddTest {
     private val chargeIndicator = ChargeIndicatorWithTdd(chargeDisplay)
     @Test
     fun givenAmperageIs1AndHzIs2000_WhenDisplayChargeMethodIsCalled_ThenShowChargeAs75() {
-        chargeIndicator.displayChargeIndicator(1, 2000)
+        val powerDataFilePath = this::class.java.getResource("/1amp2000hz.json")?.path
+
+        chargeIndicator.displayChargeIndicatorFromPowerFile(powerDataFilePath!!)
 
         verify(chargeDisplay).displayCharge(75)
     }
 
     @Test
     fun givenAmperageIs5AndHzIs2000_WhenDisplayChargeMethodIsCalled_ThenShowChargeAs76() {
-        chargeIndicator.displayChargeIndicator(5, 2000)
+        val powerDataFilePath = this::class.java.getResource("/5amp2000hz.json")?.path
+
+        chargeIndicator.displayChargeIndicatorFromPowerFile(powerDataFilePath!!)
 
         verify(chargeDisplay).displayCharge(76)
     }
