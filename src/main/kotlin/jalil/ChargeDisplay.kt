@@ -1,4 +1,4 @@
-package jalil.kotlintdd
+package jalil
 
 class ChargeDisplay {
     fun displayCharge(currentCharge: Int) {

@@ -1,6 +1,7 @@
 package jalil.kotlintdd
 
 import com.fasterxml.jackson.module.kotlin.*
+import jalil.ChargeDisplay
 import java.io.File
 
 class ChargeIndicatorWithNoTdd {

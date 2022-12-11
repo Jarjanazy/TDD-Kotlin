@@ -2,6 +2,7 @@ package jalil.kotlintdd
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
+import jalil.ChargeDisplay
 import java.io.File
 
 class ChargeIndicatorWithTdd(private val chargeDisplay: ChargeDisplay) {
